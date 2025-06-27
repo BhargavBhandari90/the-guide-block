@@ -37,6 +37,7 @@ $context = array(
 	'guideComplete'  => false,
 	'showStep'       => false,
 	'successMessage' => $attributes['successMessage'],
+	'blockId'        => $attributes['blockId'],
 );
 
 wp_interactivity_state(
@@ -68,6 +69,8 @@ wp_interactivity_state(
 				?>
 				<div data-wp-key="<?php echo esc_attr( $step['index'] ); ?>" data-wp-init="callbacks.logTimeInit" class="step-card <?php echo ( 1 === intval( $step['index'] ) ) ? 'show' : ''; ?>" data-index="<?php echo esc_attr( $step['index'] ); ?>">
 					<div class="step-title"><?php echo esc_html( $step['step'] ); ?></div>
+
+					<?php if ( ! empty( $step['imageUrl'] ) ) : ?>
 					<div class="step-image" <?php echo wp_kses_data( wp_interactivity_data_wp_context( $step ) ); ?>>
 						<img class="step-image" src="<?php echo esc_url( $step['imageUrl'] ); ?>" alt="<?php echo 'Step ' . esc_attr( $step['index'] ); ?>" loading="lazy">
 						<button
@@ -91,6 +94,8 @@ wp_interactivity_state(
 							</svg>
 						</button>
 					</div>
+					<?php endif; ?>
+
 					<div class="step-text"><?php echo wp_kses_post( $step['description'] ); ?></div>
 				</div>
 				<?php

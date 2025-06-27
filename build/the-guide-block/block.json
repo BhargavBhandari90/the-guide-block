@@ -33,7 +33,8 @@
     "typography": {
       "fontSize": true,
       "lineHeight": true,
-      "textAlign": true
+      "textAlign": true,
+      "__experimentalFontFamily": true
     },
     "color": {
       "background": true,
@@ -58,20 +59,7 @@
   "attributes": {
     "steps": {
       "type": "array",
-      "default": [
-        {
-          "id": 1,
-          "step": "Step 1",
-          "description": "Description for step 1",
-          "imageUrl": ""
-        },
-        {
-          "id": 2,
-          "step": "Step 2",
-          "description": "Description for step 2",
-          "imageUrl": ""
-        }
-      ]
+      "default": []
     },
     "blockId": {
       "type": "string"

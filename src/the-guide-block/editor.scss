@@ -10,10 +10,12 @@
 		margin: 20px auto;
 		opacity: 1;
 		position: unset;
+		transform: translateY(0);
 
 		.step-image-container {
 			position: relative;
 			display: inline-block;
+			margin-top: 20px;
 
 			&.no-image {
 				border: 4px dashed #c3c4c7;
@@ -42,5 +44,10 @@
 				margin-left: 10px;
 			}
 		}
+	}
+
+	.step-action-bottom {
+		display: flex;
+		justify-content: center;
 	}
 }

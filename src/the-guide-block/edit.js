@@ -12,7 +12,7 @@ import {
 	PanelBody,
 	ToggleControl,
 } from '@wordpress/components';
-import { trash, seen, arrowLeft } from '@wordpress/icons';
+import { trash, seen, arrowLeft, plus } from '@wordpress/icons';
 import Preview from './component/preview';
 
 import './editor.scss';
@@ -46,7 +46,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 	};
 
 	return (
-		<div { ...useBlockProps() }>
+		<div { ...useBlockProps() } key={ blockId }>
 			<InspectorControls>
 				<PanelBody title={ __( 'Settings', 'how-to-guide-block' ) }>
 					<ToggleControl
@@ -64,6 +64,8 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 					/>
 					{ showSuccessMessage && (
 						<TextControl
+							__next40pxDefaultSize
+							__nextHasNoMarginBottom={ true }
 							label={ __(
 								'Success Message',
 								'how-to-guide-block'
@@ -107,6 +109,8 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 							<div key={ index } className="step-card">
 								<h4>Step { index + 1 }</h4>
 								<TextControl
+									__next40pxDefaultSize
+									__nextHasNoMarginBottom={ true }
 									label={ __(
 										'Step Title',
 										'how-to-guide-block'
@@ -177,14 +181,16 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 							</div>
 						) ) }
 					</div>
-
-					<Button
-						onClick={ addStep }
-						variant="primary"
-						style={ { marginTop: 10 } }
-					>
-						+ Add Step
-					</Button>
+					<div className="step-action-bottom">
+						<Button
+							onClick={ addStep }
+							variant="primary"
+							label={ __( 'Add Step', 'the-guide-block' ) }
+							icon={ plus }
+						>
+							{ __( 'Add Step', 'the-guide-block' ) }
+						</Button>
+					</div>
 				</>
 			) }
 		</div>

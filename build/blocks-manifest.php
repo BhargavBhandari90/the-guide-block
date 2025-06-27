@@ -36,7 +36,8 @@ return array(
 			'typography' => array(
 				'fontSize' => true,
 				'lineHeight' => true,
-				'textAlign' => true
+				'textAlign' => true,
+				'__experimentalFontFamily' => true
 			),
 			'color' => array(
 				'background' => true,
@@ -62,18 +63,7 @@ return array(
 			'steps' => array(
 				'type' => 'array',
 				'default' => array(
-					array(
-						'id' => 1,
-						'step' => 'Step 1',
-						'description' => 'Description for step 1',
-						'imageUrl' => ''
-					),
-					array(
-						'id' => 2,
-						'step' => 'Step 2',
-						'description' => 'Description for step 2',
-						'imageUrl' => ''
-					)
+					
 				)
 			),
 			'blockId' => array(
