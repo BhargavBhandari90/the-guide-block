@@ -1,0 +1,44 @@
+.wp-block-buntywp-the-guide-block {
+	.step-header-action {
+		display: flex;
+		justify-content: end;
+	}
+	.step-card {
+		display: block;
+		margin: 20px auto;
+		opacity: 1;
+    	position: unset;
+
+		.step-image-container {
+			position: relative;
+			display: inline-block;
+
+			&.no-image {
+				border: 4px dashed #c3c4c7;
+				height: 300px;
+				width: 100%;
+			}
+
+			button {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		.step-description {
+			border: 1px solid #ede9e9;
+		}
+
+		.step-actions {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 10px;
+
+			.remove-step-button {
+				margin-left: 10px;
+			}
+		}
+	}
+}

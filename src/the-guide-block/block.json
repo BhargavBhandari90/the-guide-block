@@ -1,0 +1,98 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "buntywp/the-guide-block",
+	"version": "1.0.0",
+	"title": "The Guide Block",
+	"category": "widgets",
+	"icon": "welcome-learn-more",
+	"description": "A block to display a step-by-step guide.",
+	"example": {
+		"attributes": {
+			"steps": [
+				{
+					"id": 1,
+					"step": "Step 1",
+					"description": "Description for step 1",
+					"imageUrl": ""
+				},
+				{
+					"id": 2,
+					"step": "Step 2",
+					"description": "Description for step 2",
+					"imageUrl": ""
+				}
+			],
+			"isPreview": true
+		}
+	},
+	"supports": {
+		"html": false,
+		"interactivity": true,
+		"shadow": true,
+		"typography":{
+			"fontSize": true,
+			"lineHeight": true,
+			"textAlign": true
+		},
+		"color": {
+			"background": true,
+			"text": true,
+			"heading": false
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"__experimentalBorder": {
+			"radius": true,
+			"color": true,
+			"width": true,
+			"style": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true
+			}
+		}
+	},
+	"attributes": {
+		"steps": {
+			"type": "array",
+			"default": [
+				{
+					"id": 1,
+					"step": "Step 1",
+					"description": "Description for step 1",
+					"imageUrl": ""
+				},
+				{
+					"id": 2,
+					"step": "Step 2",
+					"description": "Description for step 2",
+					"imageUrl": ""
+				}
+			]
+		},
+		"blockId": {
+			"type": "string"
+		},
+		"isPreview": {
+			"type": "boolean",
+			"default": false
+		},
+		"showSuccessMessage": {
+			"type": "boolean",
+			"default": true
+		},
+		"successMessage": {
+			"type": "string",
+			"default": "Congratulations! You've completed the guide."
+		}
+	},
+	"textdomain": "the-guide-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScriptModule": "file:./view.js"
+}
