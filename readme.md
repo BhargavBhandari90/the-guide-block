@@ -57,12 +57,5 @@ If you find a bug, report here
 
 ## Changelog ##
 
-### 1.0.2 ###
-* Prevent liking by non-loggedin users.
-
-### 1.0.1 ###
-* Picture in Picture button on hover of video.
-
 ### 1.0.0 ###
 * Initial Release.
-* Like & Share Image and Video.
