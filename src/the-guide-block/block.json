@@ -30,7 +30,7 @@
 		"html": false,
 		"interactivity": true,
 		"shadow": true,
-		"typography":{
+		"typography": {
 			"fontSize": true,
 			"lineHeight": true,
 			"textAlign": true
