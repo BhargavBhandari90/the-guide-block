@@ -1,1 +1,41 @@
-.wp-block-buntywp-the-guide-block .step-header-action{display:flex;justify-content:end}.wp-block-buntywp-the-guide-block .step-card{display:block;margin:20px auto;opacity:1;position:unset}.wp-block-buntywp-the-guide-block .step-card .step-image-container{display:inline-block;position:relative}.wp-block-buntywp-the-guide-block .step-card .step-image-container.no-image{border:4px dashed #c3c4c7;height:300px;width:100%}.wp-block-buntywp-the-guide-block .step-card .step-image-container button{left:50%;position:absolute;top:50%;transform:translate(-50%,-50%)}.wp-block-buntywp-the-guide-block .step-card .step-description{border:1px solid #ede9e9}.wp-block-buntywp-the-guide-block .step-card .step-actions{display:flex;justify-content:flex-end;margin-top:10px}.wp-block-buntywp-the-guide-block .step-card .step-actions .remove-step-button{margin-left:10px}
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/the-guide-block/editor.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.wp-block-buntywp-the-guide-block .step-header-action {
+  display: flex;
+  justify-content: end;
+}
+.wp-block-buntywp-the-guide-block .step-card {
+  display: block;
+  margin: 20px auto;
+  opacity: 1;
+  position: unset;
+}
+.wp-block-buntywp-the-guide-block .step-card .step-image-container {
+  position: relative;
+  display: inline-block;
+}
+.wp-block-buntywp-the-guide-block .step-card .step-image-container.no-image {
+  border: 4px dashed #c3c4c7;
+  height: 300px;
+  width: 100%;
+}
+.wp-block-buntywp-the-guide-block .step-card .step-image-container button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wp-block-buntywp-the-guide-block .step-card .step-description {
+  border: 1px solid #ede9e9;
+}
+.wp-block-buntywp-the-guide-block .step-card .step-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.wp-block-buntywp-the-guide-block .step-card .step-actions .remove-step-button {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=index.css.map*/
