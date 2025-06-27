@@ -1,13 +1,15 @@
 .wp-block-buntywp-the-guide-block {
+
 	.step-header-action {
 		display: flex;
 		justify-content: end;
 	}
+
 	.step-card {
 		display: block;
 		margin: 20px auto;
 		opacity: 1;
-    	position: unset;
+		position: unset;
 
 		.step-image-container {
 			position: relative;

@@ -12,7 +12,7 @@
 		padding: 0.75rem 1.5rem;
 		background-color: #007cba;
 		color: #fff;
-		font-weight: bold;
+		font-weight: 700;
 		border: none;
 		border-radius: 8px;
 		cursor: pointer;
@@ -182,7 +182,8 @@
 		}
 	}
 
-	&.is-style-dark-mode{
+	&.is-style-dark-mode {
+
 		.steps-list {
 			transition: all 0.3s ease;
 
@@ -193,45 +194,49 @@
 		}
 	}
 
-	&.is-style-rosewater{
+	&.is-style-rosewater {
+
 		.steps-list {
 			transition: all 0.3s ease;
 
 			.step-card {
-				background-color: #E8B4B8;
+				background-color: #e8b4b8;
 				color: #121212;
 			}
 		}
 	}
 
-	&.is-style-navy-blue{
+	&.is-style-navy-blue {
+
 		.steps-list {
 			transition: all 0.3s ease;
 
 			.step-card {
-				background-color: #000C66;
+				background-color: #000c66;
 				color: #e0e0e0;
 			}
 		}
 	}
 
-	&.is-style-rose-red{
+	&.is-style-rose-red {
+
 		.steps-list {
 			transition: all 0.3s ease;
 
 			.step-card {
-				background-color: #AA1945;
+				background-color: #aa1945;
 				color: #e0e0e0;
 			}
 		}
 	}
 
-	&.is-style-teal-green{
+	&.is-style-teal-green {
+
 		.steps-list {
 			transition: all 0.3s ease;
 
 			.step-card {
-				background-color: #167D7F;
+				background-color: #167d7f;
 				color: #e0e0e0;
 			}
 		}
