@@ -26,7 +26,9 @@ A WordPress block that lets you create step-by-step guides, tutorials, or workfl
 3. Add/Edit post and search for "The Guide" block
 
 ## Demo
-Coming Soon
+https://github.com/user-attachments/assets/dea9f16b-622c-4660-8f50-f70fc3b161da
+
+
 
 ## Prerequisites
 - [Node/NPM](https://nodejs.org/en/download/)
