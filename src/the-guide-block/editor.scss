@@ -28,6 +28,19 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+
+				&.remove-step-image {
+					top: 40px;
+					right: 0;
+					left: unset;
+				}
+			}
+
+			&:hover {
+
+				button {
+					z-index: 99999;
+				}
 			}
 		}
 

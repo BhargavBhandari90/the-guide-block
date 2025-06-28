@@ -1,6 +1,5 @@
 === The Guide Block ===
 Contributors:      bhargavbhandari90, biliplugins
-Donate link:       https://www.paypal.me/BnB90/20
 Tags:              block, guide, workflow, checklists, blocks
 Requires at least: 6.6
 Tested up to:      6.7
@@ -8,6 +7,7 @@ Stable tag:        1.0.0
 License:           GPL-2.0-or-later
 Requires PHP:      7.4
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Donate link:       https://github.com/sponsors/BhargavBhandari90
 
 Build step-by-step guides in WordPress—perfect for tutorials, checklists, and workflows.
 

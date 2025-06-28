@@ -12,7 +12,7 @@ import {
 	PanelBody,
 	ToggleControl,
 } from '@wordpress/components';
-import { trash, seen, arrowLeft, plus } from '@wordpress/icons';
+import { trash, seen, arrowLeft, plus, close } from '@wordpress/icons';
 import Preview from './component/preview';
 
 import './editor.scss';
@@ -146,11 +146,26 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 										) }
 									/>
 									{ step.imageUrl && (
-										<img
-											src={ step.imageUrl }
-											alt=""
-											className="step-image"
-										/>
+										<>
+											<img
+												src={ step.imageUrl }
+												alt=""
+												className="step-image"
+											/>
+											<Button
+												icon={ close }
+												variant="tertiary"
+												onClick={ () => {
+													updateStep(
+														index,
+														'imageUrl',
+														''
+													);
+												} }
+												className="remove-step-image"
+												isDestructive
+											/>
+										</>
 									) }
 								</div>
 								<RichText
