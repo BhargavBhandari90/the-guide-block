@@ -1,6 +1,6 @@
 import { store, getContext, getElement } from '@wordpress/interactivity';
 
-const { state } = store( 'buntywp/how-to-guide', {
+const { state } = store( 'buntywp/the-guide-block', {
 	state: {
 		get showPrev() {
 			const context = getContext();
@@ -69,7 +69,7 @@ const { state } = store( 'buntywp/how-to-guide', {
 
 			window.addEventListener( 'keydown', ( event ) => {
 				if ( 'Escape' === event.key ) {
-					store( 'buntywp/how-to-guide' ).actions.hideStepImage();
+					store( 'buntywp/the-guide-block' ).actions.hideStepImage();
 				}
 			} );
 		},

@@ -11,36 +11,36 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       the-guide-block
  *
- * @package HowToGuide
+ * @package TheGuideBlock
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! defined( 'BB_TGB_VERSION' ) ) {
+if ( ! defined( 'BWPTGB_VERSION' ) ) {
 	/**
 	 * The version of the plugin.
 	 */
-	define( 'BB_TGB_VERSION', '1.0.0' );
+	define( 'BWPTGB_VERSION', '1.0.0' );
 }
-if ( ! defined( 'BB_TGB_PATH' ) ) {
+if ( ! defined( 'BWPTGB_PATH' ) ) {
 	/**
 	 *  The server file system path to the plugin directory.
 	 */
-	define( 'BB_TGB_PATH', plugin_dir_path( __FILE__ ) );
+	define( 'BWPTGB_PATH', plugin_dir_path( __FILE__ ) );
 }
-if ( ! defined( 'BB_TGB_URL' ) ) {
+if ( ! defined( 'BWPTGB_URL' ) ) {
 	/**
 	 * The url to the plugin directory.
 	 */
-	define( 'BB_TGB_URL', plugin_dir_url( __FILE__ ) );
+	define( 'BWPTGB_URL', plugin_dir_url( __FILE__ ) );
 }
-if ( ! defined( 'BB_TGB_BASE_NAME' ) ) {
+if ( ! defined( 'BWPTGB_BASE_NAME' ) ) {
 	/**
 	 * The url to the plugin directory.
 	 */
-	define( 'BB_TGB_BASE_NAME', plugin_basename( __FILE__ ) );
+	define( 'BWPTGB_BASE_NAME', plugin_basename( __FILE__ ) );
 }
 
 /**
@@ -51,7 +51,7 @@ if ( ! defined( 'BB_TGB_BASE_NAME' ) ) {
  * @see https://make.wordpress.org/core/2025/03/13/more-efficient-block-type-registration-in-6-8/
  * @see https://make.wordpress.org/core/2024/10/17/new-block-type-registration-apis-to-improve-performance-in-wordpress-6-7/
  */
-function buntywp_the_guide_block_init() {
+function bwptgb_block_init() {
 	/**
 	 * Registers the block(s) metadata from the `blocks-manifest.php` and registers the block type(s)
 	 * based on the registered block metadata.
@@ -83,21 +83,21 @@ function buntywp_the_guide_block_init() {
 		register_block_type( __DIR__ . "/build/{$block_type}" );
 	}
 }
-add_action( 'init', 'buntywp_the_guide_block_init' );
+add_action( 'init', 'bwptgb_block_init' );
 
 /**
  * Register styles for the block.
  *
  * @return void
  */
-function buntywp_the_guide_block_styles() {
+function bwptgb_block_styles() {
 
 	register_block_style(
 		'buntywp/the-guide-block',
 		array(
 			'name'         => 'dark-mode',
 			'label'        => __( 'Dark Mode', 'the-guide-block' ),
-			'style_handle' => 'bbtgb-style',
+			'style_handle' => 'bwptgb-style',
 		)
 	);
 
@@ -106,7 +106,7 @@ function buntywp_the_guide_block_styles() {
 		array(
 			'name'         => 'rosewater', // #E8B4B8.
 			'label'        => __( 'Rosewater', 'the-guide-block' ),
-			'style_handle' => 'bbtgb-style',
+			'style_handle' => 'bwptgb-style',
 		)
 	);
 
@@ -115,7 +115,7 @@ function buntywp_the_guide_block_styles() {
 		array(
 			'name'         => 'navy-blue', // #000C66.
 			'label'        => __( 'Navy Blue', 'the-guide-block' ),
-			'style_handle' => 'bbtgb-style',
+			'style_handle' => 'bwptgb-style',
 		)
 	);
 
@@ -124,7 +124,7 @@ function buntywp_the_guide_block_styles() {
 		array(
 			'name'         => 'rose-red', // #AA1945.
 			'label'        => __( 'Rose Red', 'the-guide-block' ),
-			'style_handle' => 'bbtgb-style',
+			'style_handle' => 'bwptgb-style',
 		)
 	);
 
@@ -133,9 +133,9 @@ function buntywp_the_guide_block_styles() {
 		array(
 			'name'         => 'teal-green', // #167D7F.
 			'label'        => __( 'Teal Green', 'the-guide-block' ),
-			'style_handle' => 'bbtgb-style',
+			'style_handle' => 'bwptgb-style',
 		)
 	);
 }
 
-add_action( 'wp_loaded', 'buntywp_the_guide_block_styles' );
+add_action( 'wp_loaded', 'bwptgb_block_styles' );

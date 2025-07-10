@@ -2,7 +2,7 @@
 /**
  * Render block.
  *
- * @package HowToGuide
+ * @package TheGuideBlock
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -41,7 +41,7 @@ $context = array(
 );
 
 wp_interactivity_state(
-	'buntywp/how-to-guide',
+	'buntywp/the-guide-block',
 	array(
 		'isStepPopupOpen' => false,
 		'stepImageSrc'    => '',
@@ -52,7 +52,7 @@ wp_interactivity_state(
 
 <div
 	<?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>
-	data-wp-interactive="buntywp/how-to-guide"
+	data-wp-interactive="buntywp/the-guide-block"
 	<?php echo wp_kses_data( wp_interactivity_data_wp_context( $context ) ); ?>
 	data-wp-init--class="callbacks.initClass"
 	data-wp-watch--context="callbacks.watchContext"
@@ -104,11 +104,11 @@ wp_interactivity_state(
 		?>
 		<div class="step-buttons">
 			<button class="back-step-btn" data-wp-class--no-visible="!state.showPrev" data-wp-on--click="actions.gotoPrevStep">
-				<img src="<?php echo esc_url( trailingslashit( BB_TGB_URL ) . 'assets/image/arrow-left.svg' ); ?>" alt="<?php esc_attr_e( 'Back', 'the-guide-block' ); ?>" loading="lazy">
+				<img src="<?php echo esc_url( trailingslashit( BWPTGB_URL ) . 'assets/image/arrow-left.svg' ); ?>" alt="<?php esc_attr_e( 'Back', 'the-guide-block' ); ?>" loading="lazy">
 			</button>
 			<h3 class="step-heading">Step <span data-wp-text="context.currentStep"></span> of <span data-wp-text="context.totalSteps"></span></h3>
 			<button class="next-step-btn" data-wp-class--no-visible="!state.showNext" data-wp-on--click="actions.gotoNextStep">
-				<img src="<?php echo esc_url( trailingslashit( BB_TGB_URL ) . 'assets/image/arrow-right.svg' ); ?>" alt="<?php esc_attr_e( 'Next', 'the-guide-block' ); ?>" loading="lazy">
+				<img src="<?php echo esc_url( trailingslashit( BWPTGB_URL ) . 'assets/image/arrow-right.svg' ); ?>" alt="<?php esc_attr_e( 'Next', 'the-guide-block' ); ?>" loading="lazy">
 			</button>
 		</div>
 	</div>
