@@ -1,8 +1,8 @@
 === The Guide Block ===
 Contributors:      bhargavbhandari90, biliplugins
 Tags:              block, guide, workflow, checklists, blocks
-Requires at least: 6.6
-Tested up to:      6.7
+Requires at least: 6.7
+Tested up to:      6.8
 Stable tag:        1.0.0
 License:           GPL-2.0-or-later
 Requires PHP:      7.4
